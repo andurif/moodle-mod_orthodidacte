@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 $addons = [
     'mod_orthodidacte' => [
         'handlers' => [
-            'courseucateams' => [
+            'courses' => [
                 'displaydata' => [
                     'icon' => $CFG->wwwroot . '/mod/orthodidacte/pix/icon.png',
                     'class' => '',

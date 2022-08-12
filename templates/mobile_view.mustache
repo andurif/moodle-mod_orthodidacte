@@ -27,23 +27,23 @@
 
     Context variables required for this template:
     * cmid - [int] Course module identifier.
-    * teams - [object]
-    * teams.id - [int] Subcourse instance ID.
-    * teams.intro - [string] Formatted activity description.
-    * hasprogress - [bool] Is the progress value set (not null).
-    * progress - [float] Percentual value of the progress in the referenced course.
-    * warning - [string] Warning to be displayed to the user.
+    * orthodidacte - [object]
+    * orthodidacte.id - [int] Orthodidacte instance ID.
+    * orthodidacte.intro - [string] Formatted activity description.
+    * error - [string] Error message.
+    * gotoresource - [bool] Boolean to redirect or not to the resource.
+    * url - [string] URL redirection.
 
     Example context (json): @todo change example
     {
         "cmid": 42,
-        "teams": {
+        "orthodidacte": {
             "id": 24,
             "intro": "<h3>Orthodidacte activity description</h3>"
         },
-        "hasprogress": true,
-        "progress": 100,
-        "warning": ""
+        "error": null,
+        "gotoresource": true,
+        "url": "https://www.orthodidacte.com/"
     }
 }}
 
